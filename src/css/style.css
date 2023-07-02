@@ -1,0 +1,108 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--fundo-claro);
+    color: var(--cor-texto);
+}
+
+body.modo-escuro {
+   background-color: var(--fundo-escuro);
+    color: var(--fundo-claro);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+
+}
+
+header .logo-pokemon {
+    width: 200px;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.1);
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-color: var(--destaque);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover{
+    background-color: var(--destaque2);
+}
+.modo-escuro .cartao-pokemon{
+    background-color: var(--cor-texto);
+    color: var(--destque2);
+}
+.modo-escuro .cartao-pokemon:hover{
+    background-color: var(--destaque);
+    color: var(--destaque2);
+}
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--cor-texto);
+    border-radius: 10px;
+}
+main .cartao-pokemon .informacoes span{
+    padding: 5px;    
+    text-transform: uppercase;
+    font-size: 17px;
+}
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;   
+}
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+    color: rgb(19, 19, 182);
+}
+main .cartao-pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}

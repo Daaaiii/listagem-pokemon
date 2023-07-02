@@ -1,0 +1,41 @@
+:root{
+    --fundo-claro:#7890a8;
+    --cor-texto: #181848;
+    --fundo-escuro: #000000;
+    --destaque: #304878;
+    --destaque2: #eee3cc;
+
+}
+/* 
+.color1 { #f8f8ec };
+.color2 { #aedd2b };
+.color3 { #066699 };
+.color4 { #0a5483 };
+.color5 { #02416d };
+
+.color1 { #000000 };
+.color2 { #7890a8 };
+.color3 { #304878 };
+.color4 { #181848 };
+.color5 { #f0a818 }; */
+
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
